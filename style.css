@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-image: url("http://source.unsplash.com/1600x900/?landscape");
+}
+
+.card {
+  background: #000000d0;
+  color: #fff;
+  padding: 2.6rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 32rem;
+  margin: 1.6rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7c7c7c2b;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+.temp {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #fff;
+  font-family: inherit;
+  width: calc(100% - 100px);
+  font-size: 1.6rem;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.loading {
+  display: none;
+  max-height: 2rem;
+  position: relative;
+}
+
+.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
